@@ -1,19 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>salam</title>
     <style>
-        *{
+        * {
             margin: 0;
+        }
+        .video{
+            height: 100vh;
+        }
+
+        @media only screen and (max-width: 600px) {
+            body{
+                display: flex;
+                align-items: center;
+                height: 100vh;
+            }
+            .video{
+                height: 50vh
+            }
         }
     </style>
 </head>
+
 <body style="position: relative; background-color: #000;">
 
-    <video id="#salam" style="position: absolute; width: 100vw; height: 100vh" src="video/demon-slayer.mp4" controls>
+    <video class="video" id="#salam" style="position: absolute; width: 100vw" src="video/demon-slayer.mp4" controls>
     </video>
 
     <script src="./app.js"></script>
 </body>
+
 </html>
